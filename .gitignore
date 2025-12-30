@@ -5,10 +5,6 @@ node_modules/
 dist/
 *.tsbuildinfo
 
-packages/react/
-packages/dom/
-packages/index.ts
-
 # IDE
 .idea/
 .vscode/

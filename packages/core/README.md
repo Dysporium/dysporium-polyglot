@@ -72,8 +72,10 @@ The package provides the following primary exports:
 
 ## Related Packages
 
-- `@dysporium/polyglot-react` - React bindings with hooks and components
-- `@dysporium/polyglot-dom` - Vanilla JS DOM integration with automatic element translation
+- `@dysporium/polyglot-react` - React bindings with hooks and components (includes core)
+- `@dysporium/polyglot-dom` - Vanilla JS DOM integration with automatic element translation (includes core)
+
+Most users should install one of the above packages rather than core directly. Install core only when building custom integrations or working in environments without React or DOM access.
 
 ## Requirements
 
