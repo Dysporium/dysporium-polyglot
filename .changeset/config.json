@@ -3,14 +3,11 @@
   "changelog": "@changesets/cli/changelog",
   "commit": false,
   "fixed": [],
-  "linked": [
-    ["@dysporium/polyglot-core"]
-  ],
+  "linked": [],
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": [
-    "dysporium-polyglot",
     "@dysporium/polyglot-react",
     "@dysporium/polyglot-dom"
   ]

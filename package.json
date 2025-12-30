@@ -31,7 +31,8 @@
   "files": [
     "dist",
     "packages/*/dist",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "pnpm -r build",
