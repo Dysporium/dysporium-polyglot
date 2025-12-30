@@ -1,0 +1,75 @@
+{
+  "name": "dysporium-polyglot",
+  "version": "1.0.0",
+  "description": "The simplest way to add multi-language support to any website. Install once, translate everywhere.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./react": {
+      "import": "./packages/react/dist/index.mjs",
+      "require": "./packages/react/dist/index.js",
+      "types": "./packages/react/dist/index.d.ts"
+    },
+    "./dom": {
+      "import": "./packages/dom/dist/index.mjs",
+      "require": "./packages/dom/dist/index.js",
+      "types": "./packages/dom/dist/index.d.ts"
+    },
+    "./core": {
+      "import": "./packages/core/dist/index.mjs",
+      "require": "./packages/core/dist/index.js",
+      "types": "./packages/core/dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "packages/*/dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r dev",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "pnpm build && changeset publish",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "i18n",
+    "internationalization",
+    "localization",
+    "translation",
+    "multi-language",
+    "polyglot",
+    "sdk"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.29.8",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  }
+}
