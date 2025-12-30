@@ -5,8 +5,6 @@ node_modules/
 dist/
 *.tsbuildinfo
 
-packages/ai/
-
 # IDE
 .idea/
 .vscode/

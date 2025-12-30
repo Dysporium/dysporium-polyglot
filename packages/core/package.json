@@ -1,6 +1,6 @@
 {
   "name": "@dysporium/polyglot-core",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Core translation engine for Dysporium Polyglot",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -32,4 +32,3 @@
     "typescript": "^5.3.3"
   }
 }
-

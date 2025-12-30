@@ -1,0 +1,60 @@
+{
+  "name": "@dysporium/polyglot-ai",
+  "version": "1.0.1",
+  "description": "AI-powered translation for Dysporium Polyglot",
+  "main": "./dist/index.js",
+  "private": true,
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "i18n",
+    "ai",
+    "translation",
+    "openai",
+    "claude",
+    "anthropic",
+    "qwen",
+    "llm",
+    "polyglot"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@dysporium/polyglot-core": "workspace:*",
+    "@dysporium-sdk/core": "^1.0.0"
+  },
+  "peerDependencies": {
+    "@dysporium-sdk/openai": "^1.0.0",
+    "@dysporium-sdk/anthropic": "^1.0.0",
+    "@dysporium-sdk/qwen": "^1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@dysporium-sdk/openai": {
+      "optional": true
+    },
+    "@dysporium-sdk/anthropic": {
+      "optional": true
+    },
+    "@dysporium-sdk/qwen": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}
