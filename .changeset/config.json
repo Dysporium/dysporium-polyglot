@@ -8,7 +8,6 @@
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": [
-    "@dysporium/polyglot-react",
-    "@dysporium/polyglot-dom"
+    "@dysporium/polyglot-ai"
   ]
 }
