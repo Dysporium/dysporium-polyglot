@@ -78,6 +78,7 @@ This package includes `@dysporium/polyglot-core` as a dependency. The core packa
 
 - `@dysporium/polyglot-core` - Core translation engine
 - `@dysporium/polyglot-react` - React hooks and components
+- `@dysporium/polyglot-ai` - AI-powered translation with LLM providers
 
 ## Browser Support
 

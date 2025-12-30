@@ -14,7 +14,7 @@ The library is designed with flexibility in mind. Whether you're building a Reac
 
 ## Packages
 
-The library is organized into three packages:
+The library is organized into four packages:
 
 ### @dysporium/polyglot-react
 
@@ -38,9 +38,23 @@ Vanilla JavaScript integration for applications without a framework. Uses data a
 - Support for pluralization, interpolation, and attribute translation
 - Reactive updates when the locale changes
 
+### @dysporium/polyglot-ai
+
+AI-powered translation using large language models through the [Dysporium AI SDK](https://github.com/Dysporium/dysporium-ai-sdk). Generate translations automatically from a source language using OpenAI, Anthropic Claude, Qwen, or custom providers. Useful for rapidly localizing applications or filling in missing translations.
+
+**Includes:**
+- AILoader for generating translations on demand via AI
+- AITranslator wrapper with auto-translate capabilities
+- OpenAI provider for GPT models
+- Anthropic provider for Claude models
+- Qwen provider for Alibaba's models
+- Custom provider interface for other LLMs
+- Batch translation for entire locale files
+- Caching to minimize API calls
+
 ### @dysporium/polyglot-core
 
-The underlying translation engine. Install this package directly only if you're building a custom integration or working in an environment without React or DOM access. The React and DOM packages include this automatically.
+The underlying translation engine. Install this package directly only if you're building a custom integration or working in an environment without React or DOM access. The React, DOM, and AI packages include this automatically.
 
 **Includes:**
 - Translator class for translation lookup and formatting
@@ -61,6 +75,10 @@ Choose the package that matches your application:
 **For vanilla JavaScript:**
 
     npm install @dysporium/polyglot-dom
+
+**For AI-powered translation:**
+
+    npm install @dysporium/polyglot-ai
 
 **For custom integrations:**
 
@@ -108,6 +126,7 @@ Each package includes its own README with detailed information:
 
 - [Core Package](./packages/core/README.md)
 - [DOM Package](./packages/dom/README.md)
+- [AI Package](./packages/ai/README.md)
 - React Package (README coming soon)
 
 ## License

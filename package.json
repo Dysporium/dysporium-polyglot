@@ -8,24 +8,29 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     },
     "./react": {
+      "types": "./packages/react/dist/index.d.ts",
       "import": "./packages/react/dist/index.mjs",
-      "require": "./packages/react/dist/index.js",
-      "types": "./packages/react/dist/index.d.ts"
+      "require": "./packages/react/dist/index.js"
     },
     "./dom": {
+      "types": "./packages/dom/dist/index.d.ts",
       "import": "./packages/dom/dist/index.mjs",
-      "require": "./packages/dom/dist/index.js",
-      "types": "./packages/dom/dist/index.d.ts"
+      "require": "./packages/dom/dist/index.js"
     },
     "./core": {
+      "types": "./packages/core/dist/index.d.ts",
       "import": "./packages/core/dist/index.mjs",
-      "require": "./packages/core/dist/index.js",
-      "types": "./packages/core/dist/index.d.ts"
+      "require": "./packages/core/dist/index.js"
+    },
+    "./ai": {
+      "types": "./packages/ai/dist/index.d.ts",
+      "import": "./packages/ai/dist/index.mjs",
+      "require": "./packages/ai/dist/index.js"
     }
   },
   "files": [
@@ -53,7 +58,11 @@
     "translation",
     "multi-language",
     "polyglot",
-    "sdk"
+    "sdk",
+    "ai",
+    "llm",
+    "openai",
+    "claude"
   ],
   "author": "",
   "license": "MIT",
