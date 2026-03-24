@@ -34,7 +34,7 @@
   "license": "MIT",
   "dependencies": {
     "@dysporium/polyglot-core": "workspace:*",
-    "@dysporium-sdk/core": "^1.0.0"
+    "@dysporium-sdk/core": "^3.0.0"
   },
   "peerDependencies": {
     "@dysporium-sdk/openai": "^1.0.0",
@@ -54,6 +54,6 @@
   },
   "devDependencies": {
     "tsup": "^8.0.1",
-    "typescript": "^5.3.3"
+    "typescript": "^6.0.2"
   }
 }
